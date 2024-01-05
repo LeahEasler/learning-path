@@ -1,0 +1,13 @@
+  name: hey-world
+
+  on: push
+
+  jobs:
+    hey-world-job:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository code
+        uses: actions/checkout@v3
+      - run: echo"$(cat hey_world.txt)"
